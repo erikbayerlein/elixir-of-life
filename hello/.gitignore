@@ -25,5 +25,5 @@ hello-*.tar
 # Temporary files, for example, from tests.
 /tmp/
 
-/test/
+test/*
 .DS_Store
