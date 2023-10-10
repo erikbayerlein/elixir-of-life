@@ -1,8 +1,10 @@
 defmodule Hello do
   def helloWorld do
-    a = IO.gets("Type your name: ")
-    IO.puts("Hello ")
-    IO.puts(a)
+    IO.puts("Hello world")
+  end
+
+  def helloYou(name) do
+    IO.puts("Hello #{name}")
   end
 
   def inputNum do
@@ -29,3 +31,8 @@ defmodule Hello do
     Enum.take_random(tasks, 2)
   end
 end
+
+name = IO.gets("Write your name: ")
+
+Hello.helloWorld()
+Hello.helloYou(name)
