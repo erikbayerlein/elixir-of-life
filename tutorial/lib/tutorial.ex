@@ -1,3 +1,0 @@
-defmodule Tutorial do
-
-end

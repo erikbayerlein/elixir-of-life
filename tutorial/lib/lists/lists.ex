@@ -42,4 +42,13 @@ defmodule Tutorial.Lists.Lists do
     concatFunc(t, [h | list2])
   end
 
+  # ---------------------- flatMap
+
+  def flatMap(elements, func, acc \\ [])
+  def flatMap([], _, acc), do: acc
+  def flatMap(elements, func, acc) do
+    [h | t] = elements
+    flatMap(t, func, concat(acc, func.(h)))
+  end
+
 end
