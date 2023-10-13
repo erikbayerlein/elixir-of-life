@@ -51,4 +51,15 @@ defmodule Tutorial.Lists.Lists do
     flatMap(t, func, concat(acc, func.(h)))
   end
 
+  def cond() do
+    list = [1, 2, 3]
+    x =
+    cond do
+      Enum.at(list, 4) -> 4
+      true -> 5
+    end
+
+    IO.puts(x+3)
+  end
+
 end
